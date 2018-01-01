@@ -1,0 +1,10 @@
+package cn.et.service;
+
+import java.util.List;
+import java.util.Map;
+
+public interface NewsService {
+	public List<Map<String,Object>> queryAll();
+	public List<Map<String,Object>> queryNewsByContent(String content);
+	public void insertNews(String title, String content, String htmlpath, String createtime);
+}

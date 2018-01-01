@@ -1,0 +1,11 @@
+package cn.et.dao;
+
+import java.util.List;
+import java.util.Map;
+
+public interface NewsDao {
+	
+	public List<Map<String, Object>> queryAll(String sql);
+	public List<Map<String, Object>> queryNewsByContent(String sql);
+	public void insertNews(String sql);
+}
